@@ -9,9 +9,38 @@
     width: 595px;
     height: 842px;
     margin: 100px auto;
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 .header {
   display: grid;
   width: 100%;
+  height: 110px;
+grid-template-columns: 175px 126px 72px;
+justify-content: end;
+}
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e4184e;
+  position: relative;
+  margin: 44px auto;
+}
+.circle::before {
+  content: "";
+  background-color: #e4184e;
+   width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px; 
+}
+.circle::after {
+   width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  content: "";
+   background-color: #e4184e;
+   position: absolute;
+  top: 18px; 
 }
