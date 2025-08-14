@@ -1,35 +1,45 @@
+:root {
+--bg-circle-1: #5C3C35;
+--bg-circle-2: #6E171D;
+--bg-circle-3: #48322A;
+--color-card-1: #5C3C35;
+--color-card-2:#6E171D;
+--color-card-3: #48322A;
+}
+
 .body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   font-family: Arial, sans-serif;
+   background-color: #ffffff;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 .card{
-    width: 595px;
-    height: 842px;
-    margin: 100px auto;
-    background-color: #fff;
+  width: 595px;
+  height: 842px; 
+  margin: 100px auto;
+  background-color: #fff;
 }
 .header {
   display: grid;
   width: 100%;
   height: 110px;
-grid-template-columns: 175px 126px 72px;
-justify-content: end;
+  grid-template-columns: 209px 126px 72px;
+  justify-content: end;
+  /* карточка 1 --------------  */
 }
 .circle {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #e4184e;
+  background-color: var(--bg-circle-1);
   position: relative;
   margin: 44px auto;
 }
 .circle::before {
   content: "";
-  background-color: #e4184e;
-   width: 12px;
+  background-color: var(--bg-circle-1);
+  width: 12px;
   height: 12px;
   border-radius: 50%;
   position: absolute;
@@ -40,7 +50,106 @@ justify-content: end;
   height: 12px;
   border-radius: 50%;
   content: "";
-   background-color: #e4184e;
-   position: absolute;
+  background-color: var(--bg-circle-1);
+  position: absolute;
   top: 18px; 
+}
+.procent {
+  color: var(--color-card-1);
+  font-size: 66px;
+  font-weight: bold;
+ display: grid;
+ align-items: center;
+}
+.text-discount {
+  display: grid;
+  align-items: center;
+  color: var(--color-card-1);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+/* карточка 2 -------------- */
+.circle2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--bg-circle-2);
+  position: relative;
+  margin: 44px auto;
+}
+.circle2::before {
+  content: "";
+  background-color: var(--bg-circle-2);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px; 
+}
+.circle2::after {
+   width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  content: "";
+  background-color: var(--bg-circle-2);
+  position: absolute;
+  top: 18px; 
+}
+.procent2 {
+  color: var(--color-card-2);
+  font-size: 66px;
+  font-weight: bold;
+ display: grid;
+ align-items: center;
+}
+.text-discount2 {
+  display: grid;
+  align-items: center;
+  color: var(--color-card-2);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+/* карточка 3 --------------  */
+.circle3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--bg-circle-3);
+  position: relative;
+  margin: 44px auto;
+}
+.circle3::before {
+  content: "";
+  background-color: var(--bg-circle-3);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px; 
+}
+.circle3::after {
+   width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  content: "";
+  background-color: var(--bg-circle-3);
+  position: absolute;
+  top: 18px; 
+}
+.procent3 {
+  color: var(--color-card-3);
+  font-size: 66px;
+  font-weight: bold;
+ display: grid;
+ align-items: center;
+}
+.text-discount3 {
+  display: grid;
+  align-items: center;
+  color: var(--color-card-3);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 }
