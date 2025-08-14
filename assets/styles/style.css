@@ -19,13 +19,18 @@
   height: 842px; 
   margin: 100px auto;
   background-color: #fff;
+  display: grid;
+  align-content: space-between;
 }
-.header {
+header {
   display: grid;
   width: 100%;
   height: 110px;
-  grid-template-columns: 209px 126px 72px;
+  grid-template-columns: 214px 126px 72px;
   justify-content: end;
+  font-weight: 700;
+  
+
   /* карточка 1 --------------  */
 }
 .circle {
@@ -62,6 +67,7 @@
  align-items: center;
 }
 .text-discount {
+  font-weight: 700;
   display: grid;
   align-items: center;
   color: var(--color-card-1);
@@ -69,6 +75,7 @@
   text-transform: uppercase;
   letter-spacing: 8px;
 }
+
 /* карточка 2 -------------- */
 .circle2 {
   width: 12px;
@@ -104,6 +111,7 @@
  align-items: center;
 }
 .text-discount2 {
+  font-weight: 700;
   display: grid;
   align-items: center;
   color: var(--color-card-2);
@@ -146,10 +154,19 @@
  align-items: center;
 }
 .text-discount3 {
+  font-weight: 700;
   display: grid;
   align-items: center;
   color: var(--color-card-3);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 8px;
+}
+
+footer {
+  grid-template-columns: 76px 1fr;
+  display: grid;
+  align-items: center;
+  height: 75px;
+  width: 100%;
 }
