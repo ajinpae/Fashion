@@ -13,6 +13,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+
 }
 .card{
   width: 595px;
@@ -21,6 +22,7 @@
   background-color: #fff;
   display: grid;
   align-content: space-between;
+  position: relative;
 }
 header {
   display: grid;
@@ -169,4 +171,12 @@ footer {
   align-items: center;
   height: 75px;
   width: 100%;
+}
+.ract-grey {
+  width: 478px;
+  height: 654px;
+  background-color: #E4E4E6;
+
+  bottom: 0;
+  right: 0;
 }
