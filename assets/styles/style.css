@@ -195,3 +195,11 @@ main {
   width: 100%;
   background-color: var(--color-card-1);
 }
+.block-img {
+ width: 448px;
+ height: 657px;
+background-image: url('../img/a63861ec7f9831dddc4f5c0ed662cc93a90bef09.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
