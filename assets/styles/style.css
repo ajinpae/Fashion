@@ -224,5 +224,49 @@ img {
   letter-spacing: 8px; 
 }
 .block-text {
+  font-family: 'Roboto', Arial, sans-serif;
   margin-bottom: 45px;
+  font-size: 14px;
+}
+.vert {
+    display: block;
+    writing-mode: sideways-lr;
+    position: absolute;
+    height: 410px;
+    bottom: 82px;
+    margin-left: 412px;
+    color: #ffffffb2;
+}
+.www {
+  margin-top: 8px;
+}
+.line2 {
+  height: 40px;
+  background-color: var(--color-card-2);}
+.block-img2 {
+ width: 448px;
+ height: 657px;
+background-image: url('../img/a63861ec7f9831dddc4f5c0ed662cc93a90bef09.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: grid;
+grid-template-rows: 72px 44px 1fr;
+align-items: end;
+padding-left: 33px;
+}
+.line3 {
+  height: 40px;
+  background-color: var(--color-card-3);}
+.block-img3 {
+ width: 448px;
+ height: 657px;
+background-image: url('../img/d338a59795eda48954c98894289f0b35e458e96a.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: grid;
+grid-template-rows: 72px 44px 1fr;
+align-items: end;
+padding-left: 33px;
 }
