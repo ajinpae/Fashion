@@ -172,6 +172,8 @@ footer {
   align-items: center;
   height: 75px;
   width: 100%;
+  bottom: 16px;
+  position: absolute;
 }
 .ract-grey {
   width: 478px;
