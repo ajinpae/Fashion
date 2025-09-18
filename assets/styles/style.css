@@ -32,38 +32,27 @@ header {
   grid-template-columns: 214px 126px 72px;
   justify-content: end;
   font-weight: 700;
-  
-
-  /* карточка 1 --------------  */
 }
 .circle {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--bg-circle-1);
   position: relative;
   margin: 44px auto;
 }
-.circle::before {
+.circle::before,
+.circle::after {
   content: "";
-  background-color: var(--bg-circle-1);
   width: 12px;
   height: 12px;
   border-radius: 50%;
   position: absolute;
-  top: -18px; 
+  left: 0;
+  background-color: inherit;
 }
-.circle::after {
-   width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  content: "";
-  background-color: var(--bg-circle-1);
-  position: absolute;
-  top: 18px; 
-}
+.circle::before { top: -18px; }
+.circle::after { top: 18px; }
 .procent {
-  color: var(--color-card-1);
   font-size: 66px;
   font-weight: bold;
  display: grid;
@@ -73,94 +62,6 @@ header {
   font-weight: 700;
   display: grid;
   align-items: center;
-  color: var(--color-card-1);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-}
-
-/* карточка 2 -------------- */
-.circle2 {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--bg-circle-2);
-  position: relative;
-  margin: 44px auto;
-}
-.circle2::before {
-  content: "";
-  background-color: var(--bg-circle-2);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  position: absolute;
-  top: -18px; 
-}
-.circle2::after {
-   width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  content: "";
-  background-color: var(--bg-circle-2);
-  position: absolute;
-  top: 18px; 
-}
-.procent2 {
-  color: var(--color-card-2);
-  font-size: 66px;
-  font-weight: bold;
- display: grid;
- align-items: center;
-}
-.text-discount2 {
-  font-weight: 700;
-  display: grid;
-  align-items: center;
-  color: var(--color-card-2);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-}
-/* карточка 3 --------------  */
-.circle3 {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--bg-circle-3);
-  position: relative;
-  margin: 44px auto;
-}
-.circle3::before {
-  content: "";
-  background-color: var(--bg-circle-3);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  position: absolute;
-  top: -18px; 
-}
-.circle3::after {
-   width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  content: "";
-  background-color: var(--bg-circle-3);
-  position: absolute;
-  top: 18px; 
-}
-.procent3 {
-  color: var(--color-card-3);
-  font-size: 66px;
-  font-weight: bold;
- display: grid;
- align-items: center;
-}
-.text-discount3 {
-  font-weight: 700;
-  display: grid;
-  align-items: center;
-  color: var(--color-card-3);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -199,10 +100,9 @@ main {
     position: absolute;
     z-index: -1;
 }
-.line {
-  height: 40px;
-  background-color: var(--color-card-1);
-}
+
+.line { height: 40px; }
+
 .block-img {
  width: 448px;
  height: 657px;
@@ -251,9 +151,10 @@ img {
 .www {
   margin-top: 8px;
 }
-.line2 {
-  height: 40px;
-  background-color: var(--color-card-2);}
-.line3 {
-  height: 40px;
-  background-color: var(--color-card-3);}
+.text-color1 { color: var(--color-card-1); }
+.text-color2 { color: var(--color-card-2); }
+.text-color3 { color: var(--color-card-3); }
+
+.bg-color1 { background-color: var(--bg-circle-1); }
+.bg-color2 { background-color: var(--bg-circle-2); }
+.bg-color3 { background-color: var(--bg-circle-3); }
